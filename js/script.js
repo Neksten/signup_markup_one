@@ -7,6 +7,7 @@ const content = document.querySelector('.content');
 
 const headerBurgerLive = document.getElementsByClassName('header__burger');
 const sidebarBurgerLive = document.getElementsByClassName('sidebar__burger');
+const headerMenuLive = document.getElementsByClassName('header__menu');
 
 
 headerBurger.addEventListener('click', function(e) {  
@@ -26,7 +27,14 @@ content.addEventListener('click', function(e) {
     console.log(headerBurgerLive[0])
     headerBurgerLive[0].classList.remove('active');
     sidebarBurgerLive[0].classList.remove('active');
+    headerMenuLive[0].classList.remove('active');
+    if (headerMenu.closest('.sidebar')) {
+        header.append(headerMenu);
+    } 
 })
+
+
+
 
 const incluted = document.querySelector('.incluted')
 
