@@ -5,7 +5,8 @@ const sidebar = document.querySelector('.sidebar');
 const sidebarBurger = document.querySelector('.sidebar__burger');
 const content = document.querySelector('.content');
 
-
+const headerBurgerLive = document.getElementsByClassName('header__burger');
+const sidebarBurgerLive = document.getElementsByClassName('sidebar__burger');
 
 
 headerBurger.addEventListener('click', function(e) {  
@@ -22,18 +23,16 @@ headerBurger.addEventListener('click', function(e) {
 });
 
 content.addEventListener('click', function(e) {
-    headerBurger.classList.toggle('active');
-    sidebarBurger.classList.toggle('active');
-    setTimeout(function() {
-        headerMenu.classList.toggle('active');
-    }, 150);
+    console.log(headerBurgerLive[0])
+    headerBurgerLive[0].classList.remove('active');
+    sidebarBurgerLive[0].classList.remove('active');
 })
 
+const incluted = document.querySelector('.incluted')
 
-
-
-
-
+incluted.addEventListener('submit', function(event) {
+    event.preventDefault();
+})
 
 
 
