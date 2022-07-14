@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <link rel="stylesheet" href="css/style.css">
+
+        <title>Знакомство с flex.</title>
+    </head>
+    <body>
+        <div class="wrapper">
+            <aside class="sidebar">
+                <div class="sidebar__burger"><span></span></div>
+            </aside>
+            <header class="header">
+                <div class="header__image-circle"></div>               
+                <nav class="header__menu">
+                    <ul class="header__list">
+                        <li class="header__link">
+                            <a href="">SHOP</a>
+                        </li>
+                        <li class="header__link">
+                            <a href="">CONTACT</a>
+                        </li>
+                        <li class="header__link">
+                            <a href="">SIGN IN</a>
+                        </li>
+                    </ul>
+                    <img src="img/icon/cart-svgrepo-com.svg" alt="" class="header__image">                        
+                </nav>
+                <div class="header__burger"><span></span></div>
+            </header>
+
+            <main class="content">
+                <div class="content__row">
+                    <form action="" class="content__form-included incluted content__column">
+                        <h2 class="incluted__title content__title">I ALREADY HAVE AN ACCOUNT</h2>
+                        <h3 class="incluted__subtitle content__subtitle">SIGIN WITH YOUR EMAIL AND PASSWORD</h3>
+                        <div class="incluted__row">
+                            <div class="incluted__item item">
+                                <div class="item__title">EMAIL</div>
+                                <input placeholder="Введите @email" type="text" class="item__input" id="email_incluted">
+                            </div>
+                            <div class="incluted__item item">
+                                <div class="item__title">PASSWORD</div>
+                                <input placeholder="Введите пароль" type="text" class="item__input" id="password_incluted">
+                            </div>
+                        </div>   
+                        <div class="incluted__button-row">
+                            <button class="incluted__signIn">SIGN IN</button>   
+                            <button class="incluted__googleSignIn">GOOGLE SIGNIN</button>
+                        </div>   
+                    </form>
+                    <form action="" class="content__form-registration registration content__column">
+                        <h2 class="registration__title content__title">I DON’T HAVE AN ACCOUNT</h2>
+                        <h3 class="registration__subtitle content__subtitle">SIGIN WITH YOUR EMAIL AND PASSWORD</h3>
+                        <div class="registration__row">
+                            <div class="registration__item item">
+                                <div class="item__title">EMAIL</div>
+                                <input placeholder="Введите @email" type="text" class="item__input" id="email_registration">
+
+                            </div>
+                            <div class="registration__item item">
+                                <div class="item__title">PASSWORD</div>
+                                <input placeholder="Введите пароль" type="text" class="item__input" id="password_registration">
+                            </div>
+                            <div class="registration__item item">
+                                <div class="item__title">CONFIRM PASSWORD</div>
+                                <input placeholder="Повторите пароль" type="text" class="item__input" id="password_registration_confirm">
+                            </div>
+                        </div>   
+                        <button class="registration__signIn">CREATE ACCOUNT</button>      
+                    </form>
+                </div>
+            </main>
+        </div>
+        <script src="js/script.js"></script>
+    </body>
+</html>
